@@ -1,0 +1,42 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{hbs,js,json,scss}",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ --output src/publics/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CuongLe68/nodejs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "cuongle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CuongLe68/nodejs/issues"
+  },
+  "homepage": "https://github.com/CuongLe68/nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.0",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-sequence": "^5.3.1",
+    "mongoose-slug-generator": "^1.0.4"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2"
+  }
+}
